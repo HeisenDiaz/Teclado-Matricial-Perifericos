@@ -43,12 +43,14 @@ dispositivos que podrián estar conectados en entrada y salida.
 
 ### 2.2 Efecto Rebote
 
- - Vibración o ruido se conoce como efecto rebote
+ - Vibración o ruido se conoce como efecto rebote  
  - Cambios de estado que hubo en una pulsación
  - Durante un cierto tiempo el pulsador (ó el botón) oscila entre cerrado y abierto.
-<img src="https://github.com/HeisenDiaz/Teclado-Matricial-Perifericos/blob/main/resistencia-pull-up-down-e1435659241597.png" width="30%">
+<img src="https://github.com/HeisenDiaz/Teclado-Matricial-Perifericos/blob/main/switch-debounce-principle.jpg" width="30%">
 
-### 2.3 Solución por Hardware RC
+### 2.3 Solución por Hardware
+<img src="https://github.com/HeisenDiaz/Teclado-Matricial-Perifericos/blob/main/switch-debounce-principle.jpg" width="30%">
+### 2.3.1 Solución por Hardware RC
 
  - Circuito adicional en la entrada del pulsador o boton, se le agrega un filtro de reset, se encarga de detener ese reset, que rechaze ese rebote
  - Se agrega un seguidor (Amplificador de ganancia 1)
