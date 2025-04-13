@@ -87,4 +87,6 @@ dispositivos que podrián estar conectados en entrada y salida.
 
 ### 2.5.1 Tipos de Teclado
  - MEMBRANA (plastico) : No tienen efecto rebote (Hace retorno)
- - MECANICOS 
+   <img src="https://github.com/HeisenDiaz/Teclado-Matricial-Perifericos/blob/main/8a7fb498516bd68a6215badee5aff517d8df4a3b.gif" width="30%">
+ - MECANICOS
+   <img src="https://github.com/HeisenDiaz/Teclado-Matricial-Perifericos/blob/main/8a7fb498516bd68a6215badee5aff517d8df4a3b.gif" width="30%">
