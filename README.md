@@ -49,9 +49,42 @@ dispositivos que podrián estar conectados en entrada y salida.
 <img src="https://github.com/HeisenDiaz/Teclado-Matricial-Perifericos/blob/main/switch-debounce-principle.jpg" width="30%">
 
 ### 2.3 Solución por Hardware
-<img src="https://github.com/HeisenDiaz/Teclado-Matricial-Perifericos/blob/main/resistencia-pull-up-down-e1435659241597.png" width="30%">
-### 2.3.1 Solución por Hardware RC
+<img src="https://github.com/HeisenDiaz/Teclado-Matricial-Perifericos/blob/main/8a7fb498516bd68a6215badee5aff517d8df4a3b.gif" width="30%">
+
+#### 2.3.1 Solución por Hardware RC
 
  - Circuito adicional en la entrada del pulsador o boton, se le agrega un filtro de reset, se encarga de detener ese reset, que rechaze ese rebote
  - Se agrega un seguidor (Amplificador de ganancia 1)
  - Esto garantiza que el voltaje se entregue totalmente al microcontrolador
+
+#### 2.3.2 Calculo red RC
+ - El cálculo se realiza igualando la constante de carga y descarga del condensador
+ - Tener en cuenta los tiempos de carga y de descarga del condensador
+
+   |            CARGA            |         DESCARGA        |
+   |:---------------------------:|:-----------------------:|
+   | Tiempo de carga=((R1+R2)*C) | Tiempo de descarga=R2*C |
+
+ - La elección de los elementos se dan por los tiempos requeridos para el sistema
+ - No hay ganancia el Voltaje maximo sera de **5V**
+
+#### 2.3.3 Respuesta del Pulsador
+ - Con el filtro detecta el primer pulso y el filtro disminuye la señal rapidamente, cuando se hace el siguiente pulso la señal es tan baja que es un **0 logico** 
+
+### 2.4 Solución por Software
+
+ - Es tratar de asegurar el estado que estamos detectando a traves de la señal que llego, entonces se espera para actuar,el se espera el tiempo de rebote para saber si la señal se mantiene
+ - Habran retardos, pero por software se verifica el estado
+
+#### 2.4.1 Pseudocódigo
+
+     If(entrada_pulsador!=valor_pulsador){
+     Delay(tiempo de establecimiento);  //Establecido segun la necesidad
+     valor_pulsador= entrada_pulsador   //La idea es detectar los dos cambios de alto a bajo y de bajo a alto
+     }
+
+## 2.5 Teclado Matricial
+
+### 2.5.1 Tipos de Teclado
+ - MEMBRANA (plastico) : No tienen efecto rebote (Hace retorno)
+ - MECANICOS 
