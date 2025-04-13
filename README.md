@@ -25,4 +25,4 @@ dispositivos que podrián estar conectados en entrada y salida.
  - Asegurar depende de la resistencia si tenemos 1 o 0
 
 
-
+![]()
