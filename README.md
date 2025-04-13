@@ -82,7 +82,7 @@ dispositivos que podrián estar conectados en entrada y salida.
      Delay(tiempo de establecimiento);  //Establecido segun la necesidad
      valor_pulsador= entrada_pulsador   //La idea es detectar los dos cambios de alto a bajo y de bajo a alto
      }
-
+     
 ## 2.5 Teclado Matricial
 
 ### 2.5.1 Tipos de Teclado
@@ -105,3 +105,41 @@ dispositivos que podrián estar conectados en entrada y salida.
  - Al pulsar envia un caracter y el usuario define dentro de la logica del programa
 
 ### 2.5.3 Uso del Teclado Matricial 
+
+<img src="https://github.com/HeisenDiaz/Teclado-Matricial-Perifericos/blob/main/Distribucion_de_Pines_Teclado_Matricial_Membrana_3x4_Auto_Adhesivo_12_Teclas_Teclado_4x3_Ferretronica.webp" width="30%">
+
+### 2.5.4 Pseducódigo
+
+- Activar resistencias de pullup
+- Activar interrupciones externas detección estado
+- Activar interrupciones globales
+- Repetir:
+  - “Mover” un 0 lógico por los pines conectados a las columnas del teclado
+- Si se presenta interrupción
+- Identificar la Tecla pulsada
+- Codificar la tecla
+
+**Importante detectar cambio de estado completo, no flanco**
+
+### 2.5.5 Osciladores 
+ 
+ Se controlan a partir de CONFIG1L y CONFIG1H
+ - Varia entre familias, no se cambia cuando se esta corriendo el programa, se debe volver a programar el **PIC** si se quiere cambiar
+
+#### 2.5.5.1
+
+**OSCON & OSTUNE**
+
+Tipos hay diferentes; 2 Familias internas y externas
+
+## 3. Conclusiones
+
+- El diseño de hardware es fundamental en aplicaciones con microcontroladores, ya que garantiza una correcta interpretación de señales de entrada (sensores, botones) y un control preciso de las salidas (actuadores, displays)
+- El uso de resistencias pull-up o pull-down es indispensable para asegurar un estado lógico definido en los botones o pulsadores, evitando lecturas erróneas por entradas flotantes
+- El efecto rebote es una condición inherente al diseño mecánico de pulsadores, y puede generar múltiples lecturas no deseadas en una sola pulsación. Este fenómeno debe ser tratado para asegurar la fiabilidad del sistema
+- Existen soluciones tanto por hardware como por software para eliminar el rebote, siendo la elección dependiente de los recursos disponibles y la precisión requerida
+- Los osciladores internos o externos del PIC18F4550 determinan la velocidad del sistema, y deben configurarse adecuadamente antes de cargar el programa al microcontrolador
+## 4. Autores
+
+  ### Luis Fernando Pulido Salazar - 76257
+  ### Heisen Jawer Diaz Ascencio - 137604
