@@ -86,7 +86,22 @@ dispositivos que podrián estar conectados en entrada y salida.
 ## 2.5 Teclado Matricial
 
 ### 2.5.1 Tipos de Teclado
- - MEMBRANA (plastico) : No tienen efecto rebote (Hace retorno)
-   <img src="https://github.com/HeisenDiaz/Teclado-Matricial-Perifericos/blob/main/8a7fb498516bd68a6215badee5aff517d8df4a3b.gif" width="30%">
- - MECANICOS
+
+ - **MEMBRANA (plastico)** : No tienen efecto rebote (Hace retorno)
+
+   <img src="https://github.com/HeisenDiaz/Teclado-Matricial-Perifericos/blob/main/61zXZuDDsNL._AC_UF1000%2C1000_QL80_.jpg" width="20%">
+   
+ - **MECÁNICOS**
+   
    <img src="https://github.com/HeisenDiaz/Teclado-Matricial-Perifericos/blob/main/61MSwM4cmvL.jpg" width="30%">
+
+### 2.5.2 Teclado Matricial
+
+>  🔑 Teclado Matricial: Es una matriz de pulsadores (Se nombra por la cantidad de filas y columnas)
+
+     - Ej: 4 * 3 Significa que tenemos 4 Filas y 3 Columnas, se necesitan 7 pines para identificar la matriz
+
+ - Se disminuye la cantidad de pines
+ - Al pulsar envia un caracter y el usuario define dentro de la logica del programa
+
+### 2.5.3 Uso del Teclado Matricial 
