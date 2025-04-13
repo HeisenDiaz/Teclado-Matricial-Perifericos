@@ -89,4 +89,4 @@ dispositivos que podrián estar conectados en entrada y salida.
  - MEMBRANA (plastico) : No tienen efecto rebote (Hace retorno)
    <img src="https://github.com/HeisenDiaz/Teclado-Matricial-Perifericos/blob/main/8a7fb498516bd68a6215badee5aff517d8df4a3b.gif" width="30%">
  - MECANICOS
-   <img src="https://github.com/HeisenDiaz/Teclado-Matricial-Perifericos/blob/main/8a7fb498516bd68a6215badee5aff517d8df4a3b.gif" width="30%">
+   <img src="https://github.com/HeisenDiaz/Teclado-Matricial-Perifericos/blob/main/61MSwM4cmvL.jpg" width="30%">
