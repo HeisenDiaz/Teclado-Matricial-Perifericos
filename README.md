@@ -49,7 +49,7 @@ dispositivos que podrián estar conectados en entrada y salida.
 <img src="https://github.com/HeisenDiaz/Teclado-Matricial-Perifericos/blob/main/switch-debounce-principle.jpg" width="30%">
 
 ### 2.3 Solución por Hardware
-<img src="https://github.com/HeisenDiaz/Teclado-Matricial-Perifericos/blob/main/switch-debounce-principle.jpg" width="30%">
+<img src="https://github.com/HeisenDiaz/Teclado-Matricial-Perifericos/blob/main/resistencia-pull-up-down-e1435659241597.png" width="30%">
 ### 2.3.1 Solución por Hardware RC
 
  - Circuito adicional en la entrada del pulsador o boton, se le agrega un filtro de reset, se encarga de detener ese reset, que rechaze ese rebote
